@@ -97,11 +97,8 @@
 		A3C5F53C28B47960003E8AFE /* MVPPractice */ = {
 			isa = PBXGroup;
 			children = (
-				A3C5F53D28B47960003E8AFE /* AppDelegate.swift */,
-				A3C5F53F28B47960003E8AFE /* SceneDelegate.swift */,
-				A3C5F54128B47960003E8AFE /* ViewController.swift */,
-				A3C5F54628B47961003E8AFE /* Assets.xcassets */,
-				A3C5F54828B47961003E8AFE /* LaunchScreen.storyboard */,
+				A3C5F56D28B47AB9003E8AFE /* Shared */,
+				A3C5F56E28B47ADD003E8AFE /* View Layer */,
 				A3C5F54B28B47961003E8AFE /* Info.plist */,
 			);
 			path = MVPPractice;
@@ -122,6 +119,25 @@
 				A3C5F56028B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift */,
 			);
 			path = MVPPracticeUITests;
+			sourceTree = "<group>";
+		};
+		A3C5F56D28B47AB9003E8AFE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F53D28B47960003E8AFE /* AppDelegate.swift */,
+				A3C5F53F28B47960003E8AFE /* SceneDelegate.swift */,
+				A3C5F54628B47961003E8AFE /* Assets.xcassets */,
+				A3C5F54828B47961003E8AFE /* LaunchScreen.storyboard */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A3C5F56E28B47ADD003E8AFE /* View Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F54128B47960003E8AFE /* ViewController.swift */,
+			);
+			path = "View Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
