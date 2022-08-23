@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		A3C5F53E28B47960003E8AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F53D28B47960003E8AFE /* AppDelegate.swift */; };
 		A3C5F54028B47960003E8AFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F53F28B47960003E8AFE /* SceneDelegate.swift */; };
-		A3C5F54228B47960003E8AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F54128B47960003E8AFE /* ViewController.swift */; };
+		A3C5F54228B47960003E8AFE /* GHUsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F54128B47960003E8AFE /* GHUsersListViewController.swift */; };
 		A3C5F54728B47961003E8AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3C5F54628B47961003E8AFE /* Assets.xcassets */; };
 		A3C5F54A28B47961003E8AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3C5F54828B47961003E8AFE /* LaunchScreen.storyboard */; };
 		A3C5F55528B47961003E8AFE /* MVPPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F55428B47961003E8AFE /* MVPPracticeTests.swift */; };
 		A3C5F55F28B47961003E8AFE /* MVPPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F55E28B47961003E8AFE /* MVPPracticeUITests.swift */; };
 		A3C5F56128B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F56028B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift */; };
+		A3C5F57428B49ECC003E8AFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57328B49ECC003E8AFE /* User.swift */; };
+		A3C5F57728B49F14003E8AFE /* GHUsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57628B49F14003E8AFE /* GHUsersListPresenter.swift */; };
+		A3C5F57928B49F78003E8AFE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57828B49F78003E8AFE /* NetworkManager.swift */; };
+		A3C5F57C28B49FBE003E8AFE /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57B28B49FBE003E8AFE /* GitHubService.swift */; };
+		A3C5F57F28B4A001003E8AFE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57E28B4A001003E8AFE /* Endpoint.swift */; };
+		A3C5F58128B4A03A003E8AFE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58028B4A03A003E8AFE /* Endpoints.swift */; };
+		A3C5F58328B4A059003E8AFE /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58228B4A059003E8AFE /* APIUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		A3C5F53A28B47960003E8AFE /* MVPPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C5F53D28B47960003E8AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C5F53F28B47960003E8AFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3C5F54128B47960003E8AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3C5F54128B47960003E8AFE /* GHUsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUsersListViewController.swift; sourceTree = "<group>"; };
 		A3C5F54628B47961003E8AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3C5F54928B47961003E8AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3C5F54B28B47961003E8AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,13 @@
 		A3C5F55A28B47961003E8AFE /* MVPPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C5F55E28B47961003E8AFE /* MVPPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPracticeUITests.swift; sourceTree = "<group>"; };
 		A3C5F56028B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3C5F57328B49ECC003E8AFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3C5F57628B49F14003E8AFE /* GHUsersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUsersListPresenter.swift; sourceTree = "<group>"; };
+		A3C5F57828B49F78003E8AFE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A3C5F57B28B49FBE003E8AFE /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		A3C5F57E28B4A001003E8AFE /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A3C5F58028B4A03A003E8AFE /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		A3C5F58228B4A059003E8AFE /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 			children = (
 				A3C5F56D28B47AB9003E8AFE /* Shared */,
 				A3C5F56E28B47ADD003E8AFE /* View Layer */,
+				A3C5F57028B49E86003E8AFE /* ServiceLayer */,
 				A3C5F54B28B47961003E8AFE /* Info.plist */,
 			);
 			path = MVPPractice;
@@ -135,9 +150,63 @@
 		A3C5F56E28B47ADD003E8AFE /* View Layer */ = {
 			isa = PBXGroup;
 			children = (
-				A3C5F54128B47960003E8AFE /* ViewController.swift */,
+				A3C5F57528B49EF8003E8AFE /* GHUsersList */,
+				A3C5F57128B49EAA003E8AFE /* Models */,
 			);
 			path = "View Layer";
+			sourceTree = "<group>";
+		};
+		A3C5F57028B49E86003E8AFE /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F57D28B49FF0003E8AFE /* Endpoints */,
+				A3C5F57A28B49FB0003E8AFE /* Managers */,
+				A3C5F57228B49EB3003E8AFE /* Models */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		A3C5F57128B49EAA003E8AFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F57328B49ECC003E8AFE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3C5F57228B49EB3003E8AFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F58228B4A059003E8AFE /* APIUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3C5F57528B49EF8003E8AFE /* GHUsersList */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F54128B47960003E8AFE /* GHUsersListViewController.swift */,
+				A3C5F57628B49F14003E8AFE /* GHUsersListPresenter.swift */,
+			);
+			path = GHUsersList;
+			sourceTree = "<group>";
+		};
+		A3C5F57A28B49FB0003E8AFE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F57B28B49FBE003E8AFE /* GitHubService.swift */,
+				A3C5F57828B49F78003E8AFE /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A3C5F57D28B49FF0003E8AFE /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F57E28B4A001003E8AFE /* Endpoint.swift */,
+				A3C5F58028B4A03A003E8AFE /* Endpoints.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C5F54228B47960003E8AFE /* ViewController.swift in Sources */,
+				A3C5F57928B49F78003E8AFE /* NetworkManager.swift in Sources */,
+				A3C5F57728B49F14003E8AFE /* GHUsersListPresenter.swift in Sources */,
+				A3C5F57F28B4A001003E8AFE /* Endpoint.swift in Sources */,
+				A3C5F57428B49ECC003E8AFE /* User.swift in Sources */,
+				A3C5F54228B47960003E8AFE /* GHUsersListViewController.swift in Sources */,
 				A3C5F53E28B47960003E8AFE /* AppDelegate.swift in Sources */,
 				A3C5F54028B47960003E8AFE /* SceneDelegate.swift in Sources */,
+				A3C5F58128B4A03A003E8AFE /* Endpoints.swift in Sources */,
+				A3C5F57C28B49FBE003E8AFE /* GitHubService.swift in Sources */,
+				A3C5F58328B4A059003E8AFE /* APIUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
