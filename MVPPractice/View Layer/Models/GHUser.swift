@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserBrief {
+struct GHUser {
     var username: String?
     var avatarUrl: String?
     var name: String?

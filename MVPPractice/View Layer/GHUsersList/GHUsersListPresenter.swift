@@ -8,8 +8,8 @@
 import UIKit
 
 protocol GHUsersListPresenterDelegate: AnyObject {
-    func presentUsers(users: [UserBrief])
-    func presentDetail(for username: String)
+    func presentUsers(users: [GHUser])
+    func presentDetail(for user: GHUser)
 }
 
 class GHUsersListPresenter {
@@ -17,7 +17,7 @@ class GHUsersListPresenter {
     
     weak var delegate: PresenterDelegate?
     let githubService = GithubService()
-    var users: [UserBrief] = []
+    var users: [GHUser] = []
     var pagination = 1
     
     init(with delegate: PresenterDelegate) {
@@ -30,17 +30,22 @@ class GHUsersListPresenter {
             self.pagination += 1
             switch result {
             case .success(let users):
-                self.users.append(contentsOf: users.map { UserBrief(apiUser: $0) })
+                self.users.append(contentsOf: users.map { GHUser(apiUser: $0) })
                 self.delegate?.presentUsers(users: self.users)
             case .failure(let error):
                 print("Error: \(error)")
             }
         }
     }
+    
+    func navigateToDetail(for user: GHUser) {
+        let viewController = GHUserDetailViewController(with: user)
+        delegate?.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
-private extension UserBrief {
-    init(apiUser: APIUser) {
+private extension GHUser {
+    init(apiUser: APIGHUser) {
         self.username = apiUser.username
         self.avatarUrl = apiUser.avatarUrl
         self.name = apiUser.name

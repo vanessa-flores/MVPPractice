@@ -15,13 +15,15 @@
 		A3C5F55528B47961003E8AFE /* MVPPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F55428B47961003E8AFE /* MVPPracticeTests.swift */; };
 		A3C5F55F28B47961003E8AFE /* MVPPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F55E28B47961003E8AFE /* MVPPracticeUITests.swift */; };
 		A3C5F56128B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F56028B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift */; };
-		A3C5F57428B49ECC003E8AFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57328B49ECC003E8AFE /* User.swift */; };
+		A3C5F57428B49ECC003E8AFE /* GHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57328B49ECC003E8AFE /* GHUser.swift */; };
 		A3C5F57728B49F14003E8AFE /* GHUsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57628B49F14003E8AFE /* GHUsersListPresenter.swift */; };
 		A3C5F57928B49F78003E8AFE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57828B49F78003E8AFE /* NetworkManager.swift */; };
 		A3C5F57C28B49FBE003E8AFE /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57B28B49FBE003E8AFE /* GitHubService.swift */; };
 		A3C5F57F28B4A001003E8AFE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F57E28B4A001003E8AFE /* Endpoint.swift */; };
 		A3C5F58128B4A03A003E8AFE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58028B4A03A003E8AFE /* Endpoints.swift */; };
-		A3C5F58328B4A059003E8AFE /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58228B4A059003E8AFE /* APIUser.swift */; };
+		A3C5F58328B4A059003E8AFE /* APIGHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58228B4A059003E8AFE /* APIGHUser.swift */; };
+		A3C5F58528B4AF17003E8AFE /* GHUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58428B4AF17003E8AFE /* GHUserDetailViewController.swift */; };
+		A3C5F58828B4AFC6003E8AFE /* GHUserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C5F58728B4AFC6003E8AFE /* GHUserDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +56,15 @@
 		A3C5F55A28B47961003E8AFE /* MVPPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C5F55E28B47961003E8AFE /* MVPPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPracticeUITests.swift; sourceTree = "<group>"; };
 		A3C5F56028B47961003E8AFE /* MVPPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A3C5F57328B49ECC003E8AFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3C5F57328B49ECC003E8AFE /* GHUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUser.swift; sourceTree = "<group>"; };
 		A3C5F57628B49F14003E8AFE /* GHUsersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUsersListPresenter.swift; sourceTree = "<group>"; };
 		A3C5F57828B49F78003E8AFE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A3C5F57B28B49FBE003E8AFE /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		A3C5F57E28B4A001003E8AFE /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		A3C5F58028B4A03A003E8AFE /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		A3C5F58228B4A059003E8AFE /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
+		A3C5F58228B4A059003E8AFE /* APIGHUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGHUser.swift; sourceTree = "<group>"; };
+		A3C5F58428B4AF17003E8AFE /* GHUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserDetailViewController.swift; sourceTree = "<group>"; };
+		A3C5F58728B4AFC6003E8AFE /* GHUserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHUserDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 		A3C5F56E28B47ADD003E8AFE /* View Layer */ = {
 			isa = PBXGroup;
 			children = (
+				A3C5F58628B4AF21003E8AFE /* GHUserDetail */,
 				A3C5F57528B49EF8003E8AFE /* GHUsersList */,
 				A3C5F57128B49EAA003E8AFE /* Models */,
 			);
@@ -169,7 +174,7 @@
 		A3C5F57128B49EAA003E8AFE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A3C5F57328B49ECC003E8AFE /* User.swift */,
+				A3C5F57328B49ECC003E8AFE /* GHUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,7 +182,7 @@
 		A3C5F57228B49EB3003E8AFE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A3C5F58228B4A059003E8AFE /* APIUser.swift */,
+				A3C5F58228B4A059003E8AFE /* APIGHUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +212,15 @@
 				A3C5F58028B4A03A003E8AFE /* Endpoints.swift */,
 			);
 			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A3C5F58628B4AF21003E8AFE /* GHUserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A3C5F58428B4AF17003E8AFE /* GHUserDetailViewController.swift */,
+				A3C5F58728B4AFC6003E8AFE /* GHUserDetailPresenter.swift */,
+			);
+			path = GHUserDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,13 +356,15 @@
 				A3C5F57928B49F78003E8AFE /* NetworkManager.swift in Sources */,
 				A3C5F57728B49F14003E8AFE /* GHUsersListPresenter.swift in Sources */,
 				A3C5F57F28B4A001003E8AFE /* Endpoint.swift in Sources */,
-				A3C5F57428B49ECC003E8AFE /* User.swift in Sources */,
+				A3C5F58828B4AFC6003E8AFE /* GHUserDetailPresenter.swift in Sources */,
+				A3C5F58528B4AF17003E8AFE /* GHUserDetailViewController.swift in Sources */,
+				A3C5F57428B49ECC003E8AFE /* GHUser.swift in Sources */,
 				A3C5F54228B47960003E8AFE /* GHUsersListViewController.swift in Sources */,
 				A3C5F53E28B47960003E8AFE /* AppDelegate.swift in Sources */,
 				A3C5F54028B47960003E8AFE /* SceneDelegate.swift in Sources */,
 				A3C5F58128B4A03A003E8AFE /* Endpoints.swift in Sources */,
 				A3C5F57C28B49FBE003E8AFE /* GitHubService.swift in Sources */,
-				A3C5F58328B4A059003E8AFE /* APIUser.swift in Sources */,
+				A3C5F58328B4A059003E8AFE /* APIGHUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

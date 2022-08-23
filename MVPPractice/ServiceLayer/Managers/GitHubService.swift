@@ -10,7 +10,7 @@ import Foundation
 protocol GithubServiceProtocol {
     var networkManager: NetworkManagerProtocol { get }
     
-    func fetchUsers(at page: Int, _ completion: @escaping (Result<[APIUser], Error>) -> Void)
+    func fetchUsers(at page: Int, _ completion: @escaping (Result<[APIGHUser], Error>) -> Void)
 }
 
 final class GithubService: GithubServiceProtocol {
@@ -20,7 +20,7 @@ final class GithubService: GithubServiceProtocol {
         self.networkManager = networkManager
     }
     
-    func fetchUsers(at page: Int, _ completion: @escaping (Result<[APIUser], Error>) -> Void) {
+    func fetchUsers(at page: Int, _ completion: @escaping (Result<[APIGHUser], Error>) -> Void) {
         networkManager.fetch(Endpoint.users(page: page), completion: completion)
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 class GHUsersListViewController: UIViewController {
     
     private var presenter: GHUsersListPresenter?
-    private var users: [UserBrief] = []
+    private var users: [GHUser] = []
     
     private let tableView: UITableView = {
         let tableView = UITableView()
@@ -22,7 +22,7 @@ class GHUsersListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationItem.title = "GitHub Users"
+        navigationItem.title = "Users"
         
         configurePresenter()
         configureTableView()
@@ -49,7 +49,7 @@ class GHUsersListViewController: UIViewController {
 }
 
 extension GHUsersListViewController: GHUsersListPresenterDelegate {
-    func presentUsers(users: [UserBrief]) {
+    func presentUsers(users: [GHUser]) {
         self.users = users
         
         DispatchQueue.main.async {
@@ -57,8 +57,8 @@ extension GHUsersListViewController: GHUsersListPresenterDelegate {
         }
     }
     
-    func presentDetail(for username: String) {
-        print("Present the deail for \(username)")
+    func presentDetail(for user: GHUser) {
+        presenter?.navigateToDetail(for: user)
     }
 }
 
@@ -84,6 +84,6 @@ extension GHUsersListViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        presentDetail(for: self.users[indexPath.row].username ?? "")
+        presentDetail(for: self.users[indexPath.row])
     }
 }

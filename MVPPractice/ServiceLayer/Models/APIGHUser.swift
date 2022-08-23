@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APIUser: Codable {
+struct APIGHUser: Codable {
     var username: String?
     var avatarUrl: String?
     var name: String?
